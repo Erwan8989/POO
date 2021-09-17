@@ -46,7 +46,7 @@
 
     class Animal {
       function __construct(){
-          echo "Un animal vient d'être créé <br> <br>";
+          echo "Un animal vient de naître ! <br> <br>";
           $this->age = 0;
       }
 
