@@ -1,14 +1,4 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <?php
+ <?php
 
     // function show($array, $string){
     //     foreach($array as $value){
@@ -52,24 +42,23 @@
     // echo 'Tableau de legume <br>';
     // show($legumes, 'legumes');
 
-    // Exercice 1
+    // Exercice 1 -
 
-    class Animal{
-
-    }
+    class Animal {
+      function __construct()
+      {
+          echo "Un animal vient d'être créé" . PHP_EOL;
+      }
+  }
     
     $animal1 = new Animal();
 
     $animal2 = new Animal();
 
-    echo get_class($animal1);
+    // echo get_class($animal1);
+    // var_dump($animal1);
 
-    var_dump($animal1);
+    // echo get_class($animal2);
+    // var_dump($animal2);
 
-    echo get_class($animal2);
-
-    var_dump($animal2);
-
-    ?>
-  </body>
-</html>
+?>
