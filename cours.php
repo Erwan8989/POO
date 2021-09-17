@@ -47,18 +47,21 @@
     class Animal {
       function __construct()
       {
-          echo "Un animal vient d'être créé" . PHP_EOL;
+          echo "Un animal vient d'être créé <br> <br>";
+          $this->age = 0;
       }
   }
     
     $animal1 = new Animal();
 
-    $animal2 = new Animal();
-
     // echo get_class($animal1);
-    // var_dump($animal1);
+    // var_dump($animal1->age);
 
     // echo get_class($animal2);
     // var_dump($animal2);
+
+    echo "L'age de l'animal 1 est : ".$animal1->age."<br> <br>";
+
+    $animal2 = new Animal();
 
 ?>
