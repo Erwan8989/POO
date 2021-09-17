@@ -49,26 +49,26 @@
       private string $nom;
       private int $age;
 
-      function __construct(string $nom = '', int $age = 0){
+      public function __construct(string $nom = '', int $age = 0){
           echo "Un animal sauvage apparait ! <br> <br>";
           $this->age = $age;
           $this->nommer($nom);
       }
 
-      function vieillir(){
+      public function vieillir(){
         $this->age = $this->age + 1;
         return $this; //permet de chainer des méthodes
       }
 
-      function nommer($nom){
+      public function nommer($nom){
         $this->nom = $nom;
       }
 
-      function getAge(){
+      public function getAge(){
         return $this->age;
       }
 
-      function getNom(){
+      public function getNom(){
         return $this->nom;
       }
   }
@@ -88,6 +88,9 @@
     // $animal1->nommer('Milou');
 
     echo "L'animal 1 est agé de ".$animal1->getAge()." ans, et s'appelle ".$animal1->getNom()."<br> <br>";
+
+    // var_dump($animal1->getAge());
+
     
 
 ?>
