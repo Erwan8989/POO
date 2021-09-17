@@ -54,7 +54,7 @@ class Animal {
 class Reptile extends Animal {
     public function __construct(){
         parent::__construct();
-        $this->espece = 'reptile';
+        $this->espece = "Bonjour";
     }
 
     public function getEspece() {
