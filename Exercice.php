@@ -1,22 +1,21 @@
 <?php
-class Animal {
-    protected $espece;
-    public function __construct() {
+// $solde = 0;
 
-    }
-}
-class Reptile extends Animal {
-    public function __construct(){
-        parent::__construct();
-        $this->espece = 'reptile';
-    }
-    public function getEspece() {
-        return $this->espece;
-    }
-}
+// $solde = $_GET['nom'];
 
-$reptile = new Reptile();
-var_dump('Espece');
-var_dump($reptile->getEspece());
+
+// if($solde > 0){
+//     echo "Votre solde est positif !";
+// } else if ($solde < 0){
+//     echo "Votre solde est négatif !";
+// } else{
+//     echo "Votre solde est nul";
+// }
+
+$tab = array('Pierre', 'Paul', 'Jack');
+
+$tab2 = array('prenom' => $tab[1], 'metier' => 'dev');
+
+echo $tab2['prenom']. " a le métier ". $tab2['metier'];
 
 
