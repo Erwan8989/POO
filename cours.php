@@ -45,17 +45,23 @@
     // Exercices
 
     class Animal {
-      function __construct(){
+      function __construct(string $nom = '', int $age = 0){
           echo "Un animal vient de naître ! <br> <br>";
-          $this->age = 0;
+          $this->age = $age;
+          $this->nommer($nom);
       }
 
       function vieillir(){
         $this->age = $this->age + 1;
+        return $this; //permet de chainer des méthodes
+      }
+
+      function nommer($nom){
+        $this->nom = $nom;
       }
   }
     
-    $animal1 = new Animal();
+    $animal1 = new Animal('Milou', 2);
 
     // echo get_class($animal1);
     // var_dump($animal1->age);
@@ -63,12 +69,13 @@
     // echo get_class($animal2);
     // var_dump($animal2);
 
-    echo "L'age de l'animal 1 est : ".$animal1->age."<br> <br>";
+    // echo "L'age de l'animal 1 est de ".$animal1->age." ans<br> <br>";
 
-    $animal1->vieillir();
+    // $animal1->vieillir()->vieillir(); //Enchainement de méthodes
+    
+    // $animal1->nommer('Milou');
 
-    echo "L'age de l'animal 1 est : ".$animal1->age."<br> <br>";
-
-    $animal2 = new Animal();
+    echo "L'animal 1 est agé de ".$animal1->age." ans, et s'appelle ".$animal1->nom."<br> <br>";
+    
 
 ?>
