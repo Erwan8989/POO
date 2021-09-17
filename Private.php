@@ -7,7 +7,7 @@ class Animal {
     {
         $this->age = 0;
         $this->nom ='';
-        echo 'instanciation de la classe reptile' . PHP_EOL;
+        echo 'instanciation de la classe Animal' . PHP_EOL;
        
     }
 
@@ -37,6 +37,7 @@ class Reptile extends Animal {
         echo 'On nomme depuis la classe Reptile' . PHP_EOL;
         parent::nommer($nom);
     }
+
 }
 
 
@@ -46,7 +47,6 @@ $reptile = new Reptile();
 var_dump('class de reptile');
 var_dump(get_class($reptile));
 var_dump($reptile->age);
-
 var_dump('On renomme reptile');
 $reptile->nommer('kaa');
 var_dump($reptile->nom);
@@ -57,6 +57,5 @@ var_dump($reptile->nom);
 
 // // echo ($animal->getAge());
 // var_dump($animal->getAge());
-
 
 ?>
