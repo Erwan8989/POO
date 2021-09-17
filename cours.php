@@ -80,7 +80,7 @@
     }
 
     public function nommer($nom){
-      echo "Modificcation prenom reptile";
+      echo 'Modif prenom reptile';
       parent::nommer($nom);
     }
   }
