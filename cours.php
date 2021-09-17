@@ -45,8 +45,12 @@
     // Exercices
 
     class Animal {
+
+      private string $nom;
+      private int $age;
+
       function __construct(string $nom = '', int $age = 0){
-          echo "Un animal vient de naître ! <br> <br>";
+          echo "Un animal sauvage apparait ! <br> <br>";
           $this->age = $age;
           $this->nommer($nom);
       }
@@ -58,6 +62,14 @@
 
       function nommer($nom){
         $this->nom = $nom;
+      }
+
+      function getAge(){
+        return $this->age;
+      }
+
+      function getNom(){
+        return $this->nom;
       }
   }
     
@@ -75,7 +87,7 @@
     
     // $animal1->nommer('Milou');
 
-    echo "L'animal 1 est agé de ".$animal1->age." ans, et s'appelle ".$animal1->nom."<br> <br>";
+    echo "L'animal 1 est agé de ".$animal1->getAge()." ans, et s'appelle ".$animal1->getNom()."<br> <br>";
     
 
 ?>
