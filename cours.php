@@ -42,12 +42,16 @@
     // echo 'Tableau de legume <br>';
     // show($legumes, 'legumes');
 
-    // Exercice 1 - 2
+    // Exercices
 
     class Animal {
       function __construct(){
           echo "Un animal vient d'être créé <br> <br>";
           $this->age = 0;
+      }
+
+      function vieillir(){
+        $this->age = $this->age + 1;
       }
   }
     
@@ -59,11 +63,11 @@
     // echo get_class($animal2);
     // var_dump($animal2);
 
-    $animal1->age = 10;
-
     echo "L'age de l'animal 1 est : ".$animal1->age."<br> <br>";
 
+    $animal1->vieillir();
 
+    echo "L'age de l'animal 1 est : ".$animal1->age."<br> <br>";
 
     $animal2 = new Animal();
 
