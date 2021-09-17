@@ -74,9 +74,14 @@
   }
 
   class Reptile extends Animal{
-    public function __construct()
-    {
+    public function __construct(){
       parent::__construct();
+      $this->nb_patte = 4;
+    }
+
+    public function nommer($nom){
+      echo "Modificcation prenom reptile";
+      parent::nommer($nom);
     }
   }
     
@@ -99,12 +104,12 @@
     // var_dump($animal1->getAge());
 
     $reptile = new Reptile();
-    $reptile->nommer('kaa');
+    $reptile->nommer('Kaa');
 
 
     echo "Le reptile s'appelle ".$reptile->getNom()." et a ".$reptile->getAge()." ans";
     
     
-    var_dump($reptile->getNom());
+    // var_dump($reptile->getNom());
 
 ?>
