@@ -2,19 +2,33 @@
 
 
 
-function show($array) {
+// function show($array) {
 
-    foreach($array as $value) {
-        echo "<span style='color=blue'> $value </span> <br>";
+//     foreach($array as $value) {
+//         echo "<span style='color=blue'> $value </span> <br>";
+// }
+
+// echo "<br>";
+// }
+
+
+// $prenoms = array('bernard','victor','jean');
+// show($prenoms);
+
+
+class Animal { 
+
+
+
 }
 
-echo "<br>";
-}
+$Animal1  = new Animal();
 
+$Animal2 = new Animal();
 
-$prenoms = array('bernard','victor','jean');
-show($prenoms, 'prénoms');
-
+var_dump($Animal1);
+var_dump($Animal2);
+echo get_class($Animal1);
 
 
 
