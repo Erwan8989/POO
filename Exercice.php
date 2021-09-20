@@ -3,6 +3,8 @@
 class Animal {
     private $nom;
     private $age;
+    
+    protected $espece;
 
     public function __construct(string $nom = "", int $age = 0)
     {
@@ -20,6 +22,7 @@ class Animal {
     }
 
     public function setNom(string $nom){
+        echo "Nommé depuis la classe Animal <br>";
         $this->nom = $nom;
     }
 
@@ -34,7 +37,6 @@ class Animal {
 }
 
 class Reptile extends Animal{
-    private $espece;
 
     public function __construct()
     {
@@ -45,6 +47,11 @@ class Reptile extends Animal{
 
     public function getEspece(){
         return $this->espece;
+    }
+
+    public function setNom(string $nom){
+        echo "Nommé depuis la classe Reptile <br>";
+        $this->nom = $nom;
     }
 }
 
@@ -63,3 +70,5 @@ $animal1->vieillir()->vieillir();
 echo "L'animal est agé de ".$animal1->getAge(). " ans et s'appelle ".$animal1->getNom()."<br>";
     
 echo $animal1->getEspece();
+
+var_dump($animal1->nom);
