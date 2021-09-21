@@ -22,11 +22,11 @@ class Humain {
         return $this->prenom;
     }
 
-    public function setNom($nom){
+    public function setNom(string $nom){
         return $this->nom = ucwords($nom);
     }
 
-    public function setPrenom($prenom){
+    public function setPrenom(string $prenom){
         return $this->prenom = ucwords($prenom);
     }
 
