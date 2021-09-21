@@ -7,7 +7,6 @@ class Addition {
 
     public function calcul($a, $b){
         $this->result = $a + $b;
-        return $this;
     } 
 }
 
