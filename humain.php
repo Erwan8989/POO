@@ -14,6 +14,10 @@ class Humain {
     private string $nom;
     private string $prenom;
 
+    public function __construct(){
+
+    }
+
     public function getNom(){
         return $this->nom;
     }
@@ -23,11 +27,11 @@ class Humain {
     }
 
     public function setNom(string $nom){
-        return $this->nom = ucwords($nom);
+        return $this->nom = strtoupper($nom);
     }
 
     public function setPrenom(string $prenom){
-        return $this->prenom = ucwords($prenom);
+        return $this->prenom = strtoupper($prenom);
     }
 
     public function getNomEtPrenom(){
@@ -35,7 +39,7 @@ class Humain {
     }
 }
 
-$tom = new Humain;
+$tom = new Humain();
 
 $tom->setNom('durant');
 $tom->setPrenom('tom');
