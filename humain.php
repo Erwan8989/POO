@@ -1,4 +1,13 @@
 <?php
+//   Contruire une classe Humain
+// - Définir un nom et prénom privée à classe humain
+// - Créer les accesseurs et mutateurs pour accéder au prénom et nom
+// - La méthode setNom et setPrenom doivent permettre de mettre en majuscule le nom et le prénom
+// - Créer une méthode getNomEtPrenom qui concatene le nom et le prenom de l'utilisateur avec un espace
+// - Instacier une instance de classe humain avec les caractéristiques suivante
+// - !!! Attention les paramètres passés aux mutateurs doivent être des chaînes de caractères !!!
+// Nom : victor, Prenom : Morel
+
 
 class Humain {
 
