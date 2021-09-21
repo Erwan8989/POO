@@ -51,7 +51,6 @@ class Average extends Addition {
     //     return $this->_valeur1 / $this->_valeur2;
     // }
 
-}
 
 // $calcule = new Addition(3,4);
 // echo "<p>3 + 4 = ".$calcule->addition(). "</p>";
@@ -63,7 +62,7 @@ class Average extends Addition {
     $Object_Addition = new Addition();
     var_dump($Object_Addition->sum(4,3));
     
-    $Object_Average = new Moyenne();
+    $Object_Average = new Average();
     var_dump($Object_Average->average(4,3));
 
     
