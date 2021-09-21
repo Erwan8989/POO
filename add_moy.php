@@ -19,7 +19,7 @@ class Moyenne extends Addition {
     public int $moy;
 
     public function moyenne($a, $b){
-        parent::calcul($a, $b);
+        $this->calcul($a, $b);
         $this->moy = $this->result /= 2;
         
     }
