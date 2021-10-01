@@ -11,7 +11,7 @@ class Matiere{
     public function set_mat($mat1, $mat2, $mat3){
         $this->matiere1 = $mat1;
         $this->matiere2 = $mat2;
-        $this->matiere3 = $mat3;
+        $this->matiere3 = $mat3;az
     }
 
 }
