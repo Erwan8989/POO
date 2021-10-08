@@ -130,7 +130,7 @@ $promo1->validateMatiere('Victor','Html');
 var_dump($promo1->matieres_validate);
 var_dump($promo1->eleveMatiereValidate('Victor'));
 
-                                                        // Correction //
+                                                        
 // RegEx = Vérification d'une forme
 
 
