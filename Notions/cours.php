@@ -15,7 +15,7 @@ show($prenoms);
 
 
 
-// ***********************  Définition de tableaux sans foncntions ***************************** //
+// ***********************  Définition de tableaux sans fonctions ***************************** //
 
 
 $prenoms = array('bernard','victor','jean');

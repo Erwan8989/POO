@@ -5,7 +5,6 @@ class Animal {
 }
 
 $firstAnimal = new Animal();
-
 $secondAnimal = new Animal();
 
 $type1 = get_class($firstAnimal);

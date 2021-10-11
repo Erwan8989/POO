@@ -1,6 +1,8 @@
 <?php
 class Animal {
+
     public $age;
+
     public function __construct() {
         $this->age = 0;
         $this->nom = '';
@@ -21,7 +23,7 @@ class Reptile extends Animal {
         echo 'instanciation de la classe Reptile' . PHP_EOL;
     }
     public function nommer($nom) {
-        echo 'On nomme de puis la classe Reptile' . PHP_EOL;
+        echo 'On nomme depuis la classe Reptile' . PHP_EOL;
         parent::nommer($nom);
     }
 

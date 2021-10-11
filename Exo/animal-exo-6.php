@@ -1,5 +1,6 @@
 <?php
 class Animal {
+    
     private $age;
 
     public function __construct()
